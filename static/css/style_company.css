@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+body {
+    margin: 0;
+    /* display: flex; */
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #53A2B8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    width: 94%;
+    margin: 2em auto 1em auto;
+    background-color: #fff;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+li {
+    margin-top: 12.5px;
+	text-decoration: none;
+}
+
+[class*="__container"] {
+	max-width: 1300px;
+	margin: 0px auto;
+}
+
+/* Header */
+.logo {
+    display: flex;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 174.02%;
+    color: #191919;
+    margin-left: 7px;
+}
+
+.searchPanel {
+    display: flex;
+    margin: 0 0 0 3em;
+    width: 80%;
+    border-radius: 6px;
+    background-color: #53A2B8;
+
+}
+
+.search {
+    display: flex;  
+    height: 40px;
+    width: 100%;
+    background: #03606B;
+    border-radius: 6px
+}
+
+.textBox {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #53A2B8;
+    border-radius: 6px;
+}
+
+.searthOptionImg {
+    display: flex;
+    height: 40px;
+    width: 33px;
+    margin: 0 4px 0 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.searthBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    border-radius: 6px;
+}
+
+.recAndProf {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 12px;
+    gap: 20px;
+    margin: 0 3em 0 5em;
+}
+
+.rec, .prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 132px;
+    height: 40px;
+    background: #53A2B8;
+    border-radius: 6px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+
+/* Main */
+
+.first-block__first-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 59px;
+}
+
+.first-block__content{
+	margin-left: 60px;
+	margin-top: 60px;
+
+	border-style: solid;
+	border-radius: 4px;
+	border-color: #03606B;
+	border-width: 2px;
+
+	padding: 21px 40px 0px 29px;
+}
+.first-block__list{
+	padding-left: 0px;
+}
+.list__item{
+	list-style-type: none;
+
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 33px;
+}
+.first-block__second-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.first-blog__image-text{
+	width: 350px;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 48px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.blue__buttons{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 60px;
+	gap: 10px;
+	margin-right: 50px;
+}
+.first-block__card{
+	border-radius: 6px;
+	background-color: #53A2B8;
+	width: 247px;
+	min-height: 38px;
+	max-height: 40px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 34px;
+}
+.card_1{
+    padding-left: 35px;
+	background-image: url(/src/img/Галочка.svg);
+	padding-left: 35px;
+	background-repeat: no-repeat;
+	padding-bottom: 2px;
+}
+.card_2{
+	padding: 1px 7px 1px 7px;
+}
+
+/* Second Section */
+
+.second-section__container{
+	padding-bottom: 48px;
+
+}
+.second-section__item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 66px;
+}
+.right-lable{
+	margin-left: 10px;
+	min-width: 288px;
+	max-width: 290px;
+	border-radius: 6px;
+	background-color: #03606B;
+	text-align: center;
+	color: #fff;
+
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 41px;
+}
+.right-lable p{
+	margin: 5px;
+}
+
+.left-lable-text{
+	border: 2px solid #03606B;
+	border-radius: 4px;
+	padding: 8px 300px 8px 18px;
+	margin-left: 37px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.left-lable-text p{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	color: #0D0D0D;
+	transform: rotate(0.11deg);
+}
+.card1{
+    padding: 1px 395px 1px 1px;
+}
+.card2{
+	padding: 1px 613px 1px 1px;
+}
+.card3{
+	padding: 1px 594px 83px 1px;
+	color: #ABABAB;
+
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.my-works{
+	text-align: center;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 48px;
+}
+.thied-section__container{
+	padding-bottom: 74px;
+}
+.thied-cards{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 300px;
+
+	border: 2px solid #03606B;
+	border-radius: 4px;
+	padding: 40px 68px;
+
+}
+.third-item-card{
+	width: 300px;
+	height: 450px;
+	border-radius: 6px;
+	background-color: #03606B;
+	padding: 5px 19px 15px 42px;
+}
+.third-item-card img{
+	width: 250px;
+	height: 216px;
+}
+.card__item-1{
+	border-radius: 6px;
+	background-color: #fff;
+	padding-left: 10px;
+	text-align: center;
+
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 33px;
+}
+.card__item-2{
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+
+	border-radius: 6px;
+	background-color: #fff;
+}
+.more{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: #F3F3F3;
+	text-align: center;
+}
+
+/* Footer */
+footer {
+    height: 320px;
+	margin-top: 100px;
+    background-color: white;
+}
+
+.inerFooter {
+    margin: 45px 46px 26px 46px;
+    background-color: white;
+}
+
+.txtAndTable {
+    display: flex;
+    gap: 20px;
+}
+
+.notLogo {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    color: #03606B;
+}
+
+.textUnderNotLogo {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #000000;
+}
+
+.col1, .col2, .col3, .col4 {
+    margin: 0 auto 0 auto;
+}
+
+.col1 {
+    width: 95px;
+}
+
+.col2, .col3 {
+    width: 196px;
+}
+
+.col4 {
+    width: 254px;
+}
+
+.headerOfLi {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    color: #03606B;
+}
+
+.messengers{
+    margin-top: 25px;
+}
+
+.lowerTxt {
+    margin: 30px 0 0 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}

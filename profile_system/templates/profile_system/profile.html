@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ss</title>
+	<link rel="stylesheet" href="{% static 'css/student_page.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/header&footer.css'%}" %} />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" /> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="header__content">
+			<div class="header__logo"> <a class="logo" href="">SW</a>
+				<!-- Заменить на svg logo-->
+			</div>
+			<div class="header__elements"> <a href=""><img
+              class="element-search"
+              src="{% static 'img/Vector_Search.svg' %}"
+              alt=""
+          /></a>
+				<div class="element-enter"> <a class="enter-icon" href=""></a>
+					<!-- <button class="enter-icon"></button> --><a class="enter-link" href="">Вход / Регистрация</a> </div>
+			</div>
+		</div>
+		<div class="footer__line"></div>
+	</header>
+	<main>
+		<section>
+			<div class="image_title">
+				<div class="image"> <img class="image_logo" src="{% static 'img/image_student.png' %}" width="250" height="250" alt="" /> </div>
+				<div class="title">
+					<p class="title_text"> Возраст:<span class="title_text2">20 лет</span><br /> Курс<span class="title_text2">3-ий</span><br /> Факультет:<span class="title_text2">Информационные технологии</span
+              ><br />
+              Направление:<span class="title_text2"
+                >Информационные системы и технологии</span
+              ><br />
+              Специальность:<span class="title_text2"
+                >Технологии дополненной и виртуальной реальности</span
+              ><br />
+              Телефон:<span class="title_text2">+7 (985) XXX XX XX</span><br /> Почта:<span class="title_text2">petrov.vasiliy@gmail.com</span> </p>
+				</div>
+			</div>
+		</section>
+    <section>
+      <div class="skills_description">
+		<div class="s_d_text">
+			<h1 class="s_text">Навыки</h1>
+			<h1 class="d_text">Описание</h1>
+		</div>
+		<div class="s_d_cont">	
+        	<div class="skills">
+				<p class="skills_text">Навыки</p>
+        	</div>
+        	<div class="description">
+				<p class="description_text">Описание</p>
+        	</div>
+		</div>
+      </div>
+    </section>
+	<section>
+		<div class="participation">
+			<h1 class="participation_text">Принимал уастие в проектах:</h1>
+		</div>
+		<div class="participation_cont">
+			<div class="participation_block_1">
+				<div class="image_p">
+					<img src="{% static 'img/img_logo.png' %}" alt="">
+				</div>
+				<div class="text_p">
+					<h1>Student Works</h1>
+					<p class="p_d_1">Сайт для рекламы студентов работодателям через их проекты</p>
+					<div class="hashtag">
+						<p >#сайт</p>
+						<p class="hashtag_text">#веб-дизайн</p>
+						<p class="hashtag_text">#frontend</p>
+						<p class="hashtag_text">#backend</p>
+						<p class="hashtag_text">#HTML</p>
+						<p class="hashtag_text">#CSS</p>
+						<p class="hashtag_text">#SQL</p>
+						<p class="hashtag_text">#Python</p>
+						<p class="hashtag_text">#JavaScript</p>
+					</div>
+				</div>
+			</div>
+			<div class="participation_block_2">
+				<div class="image_p">
+					<img class="" src="{% static 'img/no_photo.png' %}"  alt="">
+				</div>
+				<div class="text_p">
+					<h1>Личный проект</h1>
+					<p class="p_d_2">Кнопка, при нажатии которой появляется число от 1 до 3-х на языке Assembler</p>
+					<div class="hashtag">
+						<p >#сайт</p>
+						<p class="hashtag_text">#веб-дизайн</p>
+						<p class="hashtag_text">#frontend</p>
+						<p class="hashtag_text">#backend</p>
+						<p class="hashtag_text">#HTML</p>
+						<p class="hashtag_text">#CSS</p>
+						<p class="hashtag_text">#SQL</p>
+						<p class="hashtag_text">#Python</p>
+						<p class="hashtag_text">#JavaScript</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__line"></div>
+			<div class="footer__text">
+				<p>©Student Works</p>
+				<p>@Student Works 2022 Все права защищены.</p>
+			</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/project_page.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/header&footer.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+          <div class="header__logo">
+              <a class="logo" href="">SW</a> <!-- Заменить на svg logo-->
+          </div>
+          <div class="header__elements">
+              <a href=""><img class="element-search" src="{% static 'img/header/Vector_Search.svg' %}" alt=""></a>
+              <div class="element-enter">
+                  <a class="enter-icon" href=""></a>
+                  <!-- <button class="enter-icon"></button> -->
+                  <a class="enter-link" href="">Вход / Регистрация</a>
+              </div>                
+          </div>
+      </div>
+      <div class="footer__line"></div>
+      </header>
+    <main>
+      <section>
+        <div class="image_title">
+          <div class="image">
+            <img class="image_logo" src="{% static 'img/img_logo.png' %}" alt="" />
+          </div>
+          <div class="title">
+            <h1 class="title_text">Student Works</h1>
+            <div class="teg_title">
+              <div class="teg_row1">
+                <div class="teg_1">
+                  <h1 class="teg">#сайт</h1>
+                </div>
+                <div class="teg_2">
+                  <h1 class="teg">#веб-дизайн</h1>
+                </div>
+                <div class="teg_3">
+                  <h1 class="teg">#backend</h1>
+                </div>
+                <div class="teg_4">
+                  <h1 class="teg">#CSS</h1>
+                </div>
+              </div>
+              <div class="teg_row2">
+                <div class="teg_1">
+                  <h1 class="teg">#JavaScript</h1>
+                </div>
+                <div class="teg_2">
+                  <h1 class="teg">#Python</h1>
+                </div>
+                <div class="teg_3">
+                  <h1 class="teg">#SQL</h1>
+                </div>
+                <div class="teg_4">
+                  <h1 class="teg">#frontend</h1>
+                </div>
+              </div>
+              <div class="teg_row3">
+                <div class="teg_1">
+                  <h1 class="teg">#HTML</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="description">
+          <h1 class="description_header">О компании</h1>
+          <div class="description_container">
+            <div class="description_text_cont">
+              <p class="description_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="other">
+          <div class="other_row1">
+            <img class="item1" src="{% static 'img/works_1.png' %}"  alt="">
+            <img class="item2" src="{% static 'img/works_2.png' %}" alt="">
+          </div>
+          <div class="other_row2"></div>
+          <img class="item3" src="{% static 'img/works_3.png' %}" alt="">
+          <img class="item4" src="{% static 'img/works_4.png' %}" alt="">
+        </div>
+      </section>
+      <section>
+        <div class="list">
+          <h1 class="list_text">Список участников</h1>
+          <div class="list_cont">
+            <div class="row_1">
+              <div class="cont_1">
+                <div class="cont_1_txt">
+                  <h1 class="position">Лидер проекта:</h1>
+                  <h1 class="name">Маркевич Владислав</h1>
+                </div>
+              </div>
+              <div class="cont_2">
+                <div class="cont_2_txt">
+                  <h1 class="position">Frontend-разработка:</h1>
+                  <h1 class="name">Черёмухин Константин</h1>
+                  <h1 class="name">Саканян Армен</h1>
+                </div>
+              </div>
+              <div class="cont_3">
+                <div class="cont_2_txt">
+                  <h1 class="position">Дизайн проекта:</h1>
+                  <h1 class="name">Замотина Яна </h1>
+                  <h1 class="name">Кириченко Богдан</h1>
+                </div>
+              </div>
+           </div>
+           <div class="row_2">
+              <div class="cont_4">
+                <div class="cont_1_txt">
+                  <h1 class="position">Работа с общественностью:</h1>
+                  <h1 class="name">Киселёва Мария</h1>
+                </div>
+              </div>
+              <div class="cont_5">
+                <div class="cont_1_txt">
+                  <h1 class="position">Backend-разработка:</h1>
+                  <h1 class="name">Башкатов Никита</h1>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__line"></div>
+          <div class="footer__text">
+              <p>©Student Works</p>
+              <p>@Student Works 2022 Все права защищены.</p>
+          </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SW Registration</title>
+  <link rel="stylesheet" href="{% static 'css/style_sigin.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header_main">
+      <div class="logo">
+        <a id="logo_ref"><img src="{% static 'img/SW.png' %}" width="67" height="34" alt="Logo"></a>
+      </div>
+      <div class="signin">
+        <a href="/html/recovery.html" class="sig-in">Нет аккаунта?</a>
+        <a class="bt_sig-in">Создать</a>
+      </div>
+    </div>
+  </header>
+  <form class="container">
+    <h1>Вход</h1>
+    <div class="input-cont">
+      {% csrf_token %}
+      <input type="text" name="username" placeholder="Введите логин" required>
+      <input type="password" name="password" placeholder="Введите пароль" required>
+    </div>
+    <hr class="hr_dashed">
+    <button class="btn">Войти</button>
+  </form>
+  <script src="{% static 'js/login.js' %}"></script>
+</body>
+
+</html>

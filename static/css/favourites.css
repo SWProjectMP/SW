@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+main{
+    margin: 70px 0px;
+}
+.main__litle{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 174.02%;
+    text-align: center;
+    color: #68ADC0;
+    margin: 50px;
+}
+
+.main__card{
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-between; */
+
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px 2%;
+
+    margin: 50px 5% 0px 5%;
+    width: 90%;
+    position: relative;
+
+}
+
+.card__logo{
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 174.02%;
+    color: #191919;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+}
+.card__content{
+    /* margin-left: 50px; */
+    justify-content: start;
+    left: 100%;
+}
+.card__content__title{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 174.02%;
+
+    margin: 18px 0px;
+}
+.card__content__text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 174.02%;
+    color: rgba(0, 0, 0, 0.75);
+}
+.card__tegs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.teg{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 174.02%;
+    /* text-align: center; */
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.card__mark-star{
+    position: absolute;
+    right: 22px;
+    top: 26px;
+}
+

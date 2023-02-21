@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p {
+    font-family: 'Open Sans';
+}
+
+.image_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    right: 30px;
+    
+}
+
+.image {
+    width: 256px;
+    height: 256px;
+    border-radius: 26px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px 1px;
+}
+
+.title {
+    width: 872px;
+    height: 261px;
+    border-radius: 47px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px 1px;
+    position: relative;
+    right: -60px;
+}
+
+
+
+.image_logo {
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+.title_text {
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 15px;
+    line-height: 2;
+}
+
+.title_text2 {
+    opacity: 75%;
+    padding-left: 10px;
+}
+
+.skills_description {
+    margin-top: 35px;
+}
+
+.s_text {
+    padding-right: 400px;
+}
+.s_d_cont, .s_d_text {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    opacity: 75%;
+    
+}
+
+.s_d_cont {
+    margin-top: 35px;
+}
+
+.skills, .description {
+    width: 591px;
+    height: 366px;
+    box-shadow: 0px 0px 10px 1px;
+    border-radius: 47px;
+    margin: 0 10px;
+}
+
+.skills, .description {
+    word-break: break-all;
+}
+
+.skills_text, .description_text {
+    margin-left: 23px;
+    width: 546px;
+}
+
+.participation_text {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.participation_cont {
+    margin-top: 25px;
+}
+
+.participation_block_1, .participation_block_2 {
+    width: 1200px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 47px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 45px;
+}
+
+.participation_block_2 {
+    margin-top: 25px;
+
+}
+
+.image_p {
+    padding-left: 20px;
+    width: 229px;
+}
+
+.text_p {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.p_d_1, .p_d_2 {
+    opacity: 75%;
+}
+
+.participation_block_2 img {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.hashtag {
+    display: flex;
+    margin-top: 70px;
+    opacity: 60%;
+    font-size: 20px;
+}
+
+.hashtag_text {
+    margin: 0 10px;
+}
+
+.p_d_2 {
+    font-size: 20px;
+}
+
+.mark-star{
+    margin-top: 15px;
+}

@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/project_page.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/header&footer.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+          <div class="header__logo">
+              <a class="logo" href="">SW</a> <!-- Заменить на svg logo-->
+          </div>
+          <div class="header__elements">
+              <a href=""><img class="element-search" src="{% static 'img/header/Vector_Search.svg' %}" alt=""></a>
+              <div class="element-enter">
+                  <a class="enter-icon" href=""></a>
+                  <!-- <button class="enter-icon"></button> -->
+                  <a class="enter-link" href="">Вход / Регистрация</a>
+              </div>                
+          </div>
+      </div>
+      <div class="footer__line"></div>
+      </header>
+    <main>
+      <section>
+        <div class="image_title">
+          <div class="title">
+            <h1 class="title_text">{{project.label}}</h1>
+            <div class="teg_title">
+              <div class="teg_row1">
+                {% for tag in project.tags %}
+                <div class="teg_1">
+                  <h1 class="teg">{{ tag.tag }}</h1>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="description">
+          <h1 class="description_header">О компании</h1>
+          <div class="description_container">
+            <div class="description_text_cont">
+              <p class="description_text">
+                {{project.description}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="other">
+          <div class="other_row1">
+            {% for image in project.images %}
+            <img class="item1" src="/{{image.image}}"  alt="">
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__line"></div>
+          <div class="footer__text">
+              <p>©Student Works</p>
+              <p>@Student Works 2022 Все права защищены.</p>
+          </div>
+  </footer>
+  </body>
+</html>

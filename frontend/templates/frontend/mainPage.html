@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="{% static 'css/mainPage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
+</head>
+<body class="body">
+    
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <a class="logo" href="">SW</a> <!-- Заменить на svg logo-->
+            </div>
+            <div class="header__elements">
+                <a href=""><img class="element-search" src="{% static 'img/header/Vector_Search.svg' %}" alt=""></a>
+                <div class="element-enter">
+                    <a class="enter-icon" href=""></a>
+                    <a class="enter-link" href="{% url 'login' %}">Вход</a>
+                </div>                
+            </div>
+        </div>
+            
+    </header>
+
+    <main>
+		<section class="banner">
+			<img class="banner__img" src="{% static 'img/main__page/инф_фото.png' %}" alt="">
+			<span class="item-1">Ваша карьера начинается с</span>
+			<span class="item-2">StudentWorks</span>
+			<span class="item-3">Стажировки, вакансии, практика</span>
+		</section>
+		
+        <section class="faculties">
+			<div class="faculties__block">
+				<div class="min-block-1">
+					<button class="card">Информационные технологии</button>
+				</div>
+				<div class="min-block-1">
+					<button class="card">Полиграфия</button>
+				</div>
+				<div class="min-block-1">
+					<button class="card">Машиностроение</button>
+				</div>
+			</div>
+
+			<div class="faculties__block">
+				<div class="min-block-2">
+					<button class="card">Химические технологии и биотехологии</button>
+				</div>
+				<div class="min-block-2">
+					<button class="card">Экономика и управление</button>
+				</div>
+				<div class="min-block-2">
+					<button class="card">Транспортный</button>
+				</div>
+			</div>
+
+			<div class="faculties__block">
+				<div class="min-block-3">
+					<button class="card">Урбанистика и городское хозяйство</button>
+				</div>
+				<div class="min-block-3">
+					<button class="card">Графика и искусство</button>
+				</div>
+				<div class="min-block-3">
+					<button class="card">Издательское дело и журналистика</button>
+				</div>
+			</div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__line"></div>
+            <div class="footer__text">
+                <p>©Student Works</p>
+                <p>@Student Works 2022 Все права защищены.</p>
+            </div>
+    </footer>
+    <script src="{% static 'js/main_page.js' %}"></script>
+
+</body>
+
+</html>

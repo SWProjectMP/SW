@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SW Registration</title>
+  <link rel="stylesheet" href="{% static 'css/style_reg.css' %} ">
+</head>
+<body>
+  <header>
+    <div class="header_main">
+      <div class="logo">
+        <a href=""><img src="{% static 'img/SW.png' %}" width="67" height="34" alt="Logo"/></a>
+      </div>
+      <div class="signin">
+        <a href="" class="sig-in">Уже есть аккаунт?</a>
+        <button onclick="document.location='sig-in.html'" class="bt_sig-in">Вход</button>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+  <div class="container-inner">
+    <h1>Регистрация</h1>
+    <form class="input-cont">
+      {% csrf_token %}
+      <input type="text" name="username" placeholder="Введите логин" raquired/>
+      <input type="email" name="email" placeholder="Введите почту" required/>
+      <input type="password" name="password" placeholder="Введите пароль" required/>
+      <input type="password" placeholder="Повторите пароль" required/>
+      <div class="error hide">Пароли не совпадают</div>
+      <div class="error hide">Такой пользователь уже существует</div>
+      <div class="error hide">Ошибка регистрации</div>
+      <hr class="hr_dashed"/>
+      <button class="btn">Зарегистрироваться</button>
+    </form>
+    </div>
+  </div>
+  <script src="{% static 'js/register.js' %}"></script>
+</body>
+</html>

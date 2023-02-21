@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mainPage.css' %}">
+	<link rel="stylesheet" href="{% static 'css/HeaderandFooter.css' %}">
+</head>
+
+<body>
+	<header>
+        <div class="logo"><a class="logo" href="#">SW</a></div>
+        <div class="searthPanel">
+            <div class="searth"><input type="text" placeholder="Поиск по резюме" class="textBox"><a href="#"><img src="/static/img/иконка настроек.svg" alt="" class="searthOptionImg"></a></div>
+            <div class="searthBtn"><a href="#" class="searthBtn">Найти</a></div>
+        </div>
+        <div class="recAndProf">
+            <div class="rec"><a href="#" class="rec">Рекомендации</a></div>
+            {% if user %}
+            <div class="prof"><a href="/profile" class="prof">Профиль</a></div>
+            {% else %}
+            <div class="prof"><a href="/login" class="prof">Войти</a></div>
+            {% endif %}
+        </div>
+    </header>
+
+    <main>
+
+		<section class="banner">
+			<img class="banner__img" src="/src/img/main__page/инф_фото.png" alt="">
+			<span class="item-1">Ваша карьера начинается с</span>
+			<span class="item-2">StudentWorks</span>
+			<span class="item-3">Стажировки, вакансии, практика</span>
+		</section>
+		
+        <section class="faculties">
+			<div class="faculties__block">
+				<div class="min-block-1">
+					<button onclick="document.location='https://ya.ru/'" class="card">Информационные технологии</button>
+				</div>
+				<div class="min-block-1">
+					<button onclick="document.location='https://ya.ru/'" class="card">Полиграфия</button>
+				</div>
+				<div class="min-block-1">
+					<button onclick="document.location='https://ya.ru/'" class="card">Машиностроение</button>
+				</div>
+			</div>
+
+			<div class="faculties__block">
+				<div class="min-block-2">
+					<button onclick="document.location='https://ya.ru/'" class="card">Химические технологии и биотехологии</button>
+				</div>
+				<div class="min-block-2">
+					<button onclick="document.location='https://ya.ru/'" class="card">Экономика и управление</button>
+				</div>
+				<div class="min-block-2">
+					<button onclick="document.location='https://ya.ru/'" class="card">Транспортный</button>
+				</div>
+			</div>
+
+			<div class="faculties__block">
+				<div class="min-block-3">
+					<button onclick="document.location='https://ya.ru/'" class="card">Урбанистика и городское хозяйство</button>
+				</div>
+				<div class="min-block-3">
+					<button onclick="document.location='https://ya.ru/'" class="card">Графика и искусство</button>
+				</div>
+				<div class="min-block-3">
+					<button onclick="document.location='https://ya.ru/'" class="card">Издательское дело и журналистика</button>
+				</div>
+			</div>
+        </section>
+    </main>
+
+	<footer>
+        <div class="inerFooter">
+            <div class="txtAndTable">
+                <div class="companyInf">
+                    <p class="notLogo">SW</p>
+                    <p class="textUnderNotLogo">Компания StudentsWork</p>
+                </div>
+                <div class="col1">
+                        <li class="headerOfLi">StudentsWork</li>
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Рекомендации</a></li>
+                        <li><a href="#">Факультеты</a></li>
+                </div>
+                <div class="col2">
+                    <li class="headerOfLi">Адрес</li>
+                    <li><a href="https://yandex.ru/maps/-/CCUfb4h-dB">ул. Прянишникова, 2А, корп. 1, Москва, 127550</a></li>
+                </div>
+                <div class="col3">
+                    <li class="headerOfLi">Контакты</li>
+                    <li>Телефон:<a href="tel:+79212347465"> +79212347465</a></li>
+                    <li>Email:<a href="mailto:sw@info.mpt.ru"> sw@info.mpt.ru</a></li>
+                </div>
+                <div class="col4">
+                    <li class="headerOfLi">Правила</li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </div>
+                
+            </div>
+            <div class="messengers">
+                    <img src="img/footer/vk.svg" alt="">
+                    <img src="img/footer/instagram.svg" alt="">
+                    <img src="img/footer/facebook.svg" alt="">
+                    <img src="img/footer/twitter.svg" alt="">
+                    <img src="/img/footer/odnoklassniki.svg" alt="">
+            </div>
+            <hr>
+            <div class="lowerTxt">Сегодня на сайте 60909330 резюме и за неделю 3473542 приглашения</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

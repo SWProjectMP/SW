@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/searchPageStyle.css' %}">
+</head>
+
+<body>
+    {% csrf_token %}
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <a class="logo" href="">SW</a> <!-- Заменить на svg logo-->
+            </div>
+            <div class="header__elements">
+                <a href=""><img class="element-search" src="{% static 'img/header/Vector_Search.svg' %}" alt=""></a>
+                <div class="element-enter">
+                    <a class="enter-icon" href=""><img src="{% static 'img/header/Vector_Enter.svg' %}" alt=""></a>
+                    <!-- <button class="enter-icon"></button> -->
+                    <a class="enter-link" href="">Вход / Регистрация</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__line"></div>
+
+    </header>
+
+    <main>
+        <div class="text__container">
+                <h1 class="search__text">Поиск</h1>
+            </div>
+        <section class="categories">
+            <section class="fac__section">
+                <div class="fac__check">
+                    <div class="fac__choose__main">
+                        <div class="fac__choose__main__switch"></div>
+                    </div>
+                    <div class="fac__text">факультет</div>
+                </div>
+                <div class="facultet__categories">
+                    <ul class="fac__first__section">
+                        {% for facult in facults_all %}
+                        <li>
+                            <div class="fac__choose" facult-name="{{ facult.name }}"></div>
+                            <div class="fs__text">{{facult.display_name}}</div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <section class="choose__tegs">
+                <div class="teg__check">
+                    <div class="teg__choose__main">
+                        <div class="teg__choose__main__switch"></div>
+                    </div>
+                    <div class="teg__text">теги</div>
+                </div>
+                <div class="tegs">
+                    <ul class="tegss">
+                        {% for tag in tags %}
+                        <li><div class="all__tegs" tag-name="{{ tag.tag }}">{{ tag.display_tag }}</div></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <div class="header__line"></div>
+        <section>
+            <div class="results__of__search__text">Результаты поиска:</div>
+            {% for project in projects %}
+            <section class="results__of__search">
+                <div class="rs1">
+                    <div class="result__logo"><img src="/{{ project.image }}" alt=""></div>
+                </div>
+                <div class="rs2" >
+                    <div class="result__main__text" project-id="{{ project.uniq_id }}">{{project.label}}</div>
+                    <div class="result__secound__text">{{ project.desc }}</div>
+                    <div class="result__tegs">
+                        {% for tag in project.tags %}
+                        <li class="rs2__tegs">{{ tag.display_tag }}</li>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="star">
+                    <img src="img/search__Page/Star_1.svg" alt="">
+                </div>
+            </section>
+            {% endfor %}
+        </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__line"></div>
+        <div class="footer__text">
+            <p>©Student Works</p>
+            <p>@Student Works 2022 Все права защищены.</p>
+        </div>
+    </footer>
+    <button id="send">send</button>
+    <script src="{% static 'js/jss.js' %}"></script>
+   
+</body>
+
+</html>
